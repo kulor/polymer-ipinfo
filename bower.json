@@ -1,0 +1,17 @@
+{
+  "name": "kulor-ipinfo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kulor/polymer-ipinfo",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-ajax": "^1.2.0"
+  }
+}

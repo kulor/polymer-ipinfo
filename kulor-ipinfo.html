@@ -1,0 +1,23 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+
+<dom-module id="kulor-ipinfo">
+  <template>
+    <style>
+      /* local DOM styles go here */
+      :host {
+        display: inline-block;
+      }
+    </style>
+    <iron-ajax auto
+        url="http://ipinfo.io"
+        handle-as="json"
+        last-response="{{ajaxResponse}}"></iron-ajax>
+    <span>{{ajaxResponse.region}}</span>
+  </template>
+  <script>
+    Polymer({
+      is: 'kulor-ipinfo'
+    });
+  </script>
+</dom-module>
